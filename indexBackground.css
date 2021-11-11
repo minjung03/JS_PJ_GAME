@@ -1,6 +1,7 @@
 body{
-    background-color:plum;
+    background-color:salmon;
 }
+/* 폰트 */
 @font-face {
     font-family: 'Cafe24SsurroundAir';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
@@ -25,26 +26,47 @@ body{
     font-weight: normal;
     font-style: normal;
 }
-#gameStartTitle{
+/* 게임 시작 화면 제목 */
+#gameStartTitle{ 
     margin-top: 10pc;
+    margin-bottom: 5pc;
     margin-right: 5pc;
     float: right;
     align-self:auto;
     font-family: '양진체';
     font-size: large;
-    font-size: 1.5pc;
+    font-size: 2pc;
+    color:snow;
+    text-shadow: azure 2pc;
 }
+/* 버튼이 들어있는 div (전체 버튼 디자인 설정)*/
 .gameButtons{
-    margin-top: 15pc;
-    background-color: white;
-    color: rgb(0, 0, 0);
     text-align: center;
-    border: none;
-    vertical-align: auto;
+    border-radius: 5pc;
+    border-color: azure;
     font-family: 'SF_IceLemon';
-    float: right;
-    margin: auto 0;
+    text-shadow: azure;
+    font-size: 1.5pc;
+    float:right;
+    background-color:darksalmon;
 }
+/* 게임 시작 버튼*/
 #gamestart{
-    border-style: none;
+    margin-top: 16pc;
+    float: right;
+    color: snow;
+}
+/* 게임 시작 버튼 위에 커서를 올린 경우 설정*/
+#gamestart:hover{
+    color: aqua;
+}
+/* 게임 방법 버튼*/
+#How_to_play{
+    margin-top: 1pc;
+    float: right;
+    color: snow;
+}
+/* 게임 방법 버튼 위에 커서를 올린 경우 설정*/
+#How_to_play:hover{
+    color: aqua;
 }
