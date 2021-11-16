@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="indexBackground.css">
+        <link rel="stylesheet" href="./css/index.css?after">
         <title>GIVE ME MY SAND</title>
+        <script src="./script/index.js"></script>
     </head>
+
     <body>
-        <div><img id="mainstore" src="mainstore.png"></div>
-        <div id="gameStartTitle"> <p>GIVE ME MY SAND</p></div>
-       <div id="buttonlist">
-            <div id="gameButtons">
-                <button id="gamestart" class="gameButtons">게임 시작</button>
-                <br>
-                <button id="How_to_play" class="gameButtons">게임 방법</button>
-            </div>
-       </div>
+
+        <img id="main_store" src="./img/가게배경.png">           
+        <table class="main_background">
+            <tr>
+                <td id="title"><span id="main_title">GIVE ME, MY SAND!</span></td>
+            </tr>
+            <tr>
+                <td id="sub"><button id="main_GameStart"><a href="mainGame.html">게임 시작</a> </button></td>
+            </tr>
+            <tr>
+                <td><button id="main_GameInfo"><a href="Gameinfo.html">게임 방법</a></button> </td>
+            </tr>
+        </table>
+        
     </body>
 </html>
