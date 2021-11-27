@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <style>
+        div{
+            width: 500px;
+            height: 150px;
+            border: 1px gray solid;
+        }
+        img {
+            width: 300px;
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- div 최대 10개 -->
+    <div id="step1">
+        <img id=1 onclick="stackMaterial('item1')">
+    </div>
+
+    <div id="step2">
+        <img id=2 onclick="stackMaterial('item1')">
+    </div>
+
+    <div id="step3">
+        <img id=3 onclick="stackMaterial('item1')">
+    </div>
+
+    <div id="step4">
+        <img id=4 onclick="stackMaterial('item1')">
+    </div>
+
+    <div id="step5">
+        <img id=5 onclick="stackMaterial('item1')">
+    </div>
+
+    <div id="step6">
+        <img id=6 onclick="stackMaterial('item1')">
+    </div>
+
+    <div id="step7">
+        <img id=7 onclick="stackMaterial('item1')">
+    </div>
+
+    <div id="step8">
+        <img id=8 onclick="stackMaterial('item1')">
+    </div>
+
+    <div id="step9">
+        <img id=9 onclick="stackMaterial('item1')">
+    </div>
+    <div id="step10">
+        <img id="item10" onclick="stackMaterial('item1')">
+    </div>
+
+
+
+    <div id="ketchupImg">
+        <img id="ketchup" onclick="stackMaterial('http://image.auction.co.kr/itemimage/1b/49/b4/1b49b44686.jpg')" src="http://image.auction.co.kr/itemimage/1b/49/b4/1b49b44686.jpg">
+    </div>
+
+    <div id="MayonnaiseImg">
+        <img id="Mayonnaise" onclick="stackMaterial('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTimHSmAJHE_U6HDl27V0VDBeH_rzmo4hHoFg&usqp=CAU')" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTimHSmAJHE_U6HDl27V0VDBeH_rzmo4hHoFg&usqp=CAU">
+    </div>
+
+    <div id="baconImg">
+        <img id="Bacon" onclick="stackMaterial('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrQQLroOyFywuaqKSW2LIzcuc1pFRzHRbxrg&usqp=CAU')" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrQQLroOyFywuaqKSW2LIzcuc1pFRzHRbxrg&usqp=CAU">
+    </div>
+
+    <div id="redonionImg">
+        <img id="Redonionimage" onclick="stackMaterial('https://t1.daumcdn.net/cfile/tistory/9931463359D8DDE634')" src="https://t1.daumcdn.net/cfile/tistory/9931463359D8DDE634">
+    </div>
+
+    <div id="pickleImg">
+        <img id="Pickleimage" onclick="stackMaterial('https://w.namu.la/s/987104d1f668647d63cea107631fff72884c46c9f69036b6bbbad7f2dc6abb380d7e893f29ba74f64ae56910d6bbbba96c5c1b980ce1b965e0e69813c89302668b966ffd0b868b9a99979d35397f6a0de74d54f753c4e2ea5a9f1e6a32109865')" src="https://w.namu.la/s/987104d1f668647d63cea107631fff72884c46c9f69036b6bbbad7f2dc6abb380d7e893f29ba74f64ae56910d6bbbba96c5c1b980ce1b965e0e69813c89302668b966ffd0b868b9a99979d35397f6a0de74d54f753c4e2ea5a9f1e6a32109865">
+    </div>
+
+    <div id="potatosaladImg">
+        <img id="Potatosaladimage" onclick="stackMaterial('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOL6mF1KTZrLFrOaeFAt9gle9o5pYEbqSg_g&usqp=CAU')" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOL6mF1KTZrLFrOaeFAt9gle9o5pYEbqSg_g&usqp=CAU">
+    </div>
+
+    <div id="sausageImg">
+        <img id="Sausageimage" onclick="stackMaterial('https://ww.namu.la/s/040b412c59c3af55ecfad65834040885a2e1482c96549ae1be2189c7ac7182b07b00a54e13ad1a95bb3f7180a6ef15bdca13ad7847222ebfb11b039e3837a080db6797b098cf4f5cd56bbad72c4f9bff')" src="https://ww.namu.la/s/040b412c59c3af55ecfad65834040885a2e1482c96549ae1be2189c7ac7182b07b00a54e13ad1a95bb3f7180a6ef15bdca13ad7847222ebfb11b039e3837a080db6797b098cf4f5cd56bbad72c4f9bff">
+    </div>
+
+    <div id="hemImg">
+        <img id="hemImgae" onclick="stackMaterial('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfHtuh-sYHqUG7ZCIxQLge0Mqk5tiQvGEbMw&usqp=CAU')" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfHtuh-sYHqUG7ZCIxQLge0Mqk5tiQvGEbMw&usqp=CAU">
+    </div>
+
+    <div id="cheeseImg">
+        <img id="cheeseImgae" onclick="stackMaterial('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVzbS8FtJAsSsEOanapI1VRVkYZsDvCKenhg&usqp=CAU')" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVzbS8FtJAsSsEOanapI1VRVkYZsDvCKenhg&usqp=CAU">
+    </div>
+
+    <div id="lettuceImg">
+        <img id="lettuceImgae" onclick="stackMaterial('https://media.istockphoto.com/photos/salad-leaf-lettuce-isolated-on-white-background-with-clipping-path-picture-id1180832072')" src="https://media.istockphoto.com/photos/salad-leaf-lettuce-isolated-on-white-background-with-clipping-path-picture-id1180832072">
+    </div>
+
+    <div id="tomatoImg">
+        <img id="TomatoImgae" onclick="stackMaterial('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyKeA1cTxn_IqlCfLFT2fn7VtuMGvsT2o34g&usqp=CAU')" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyKeA1cTxn_IqlCfLFT2fn7VtuMGvsT2o34g&usqp=CAU">
+    </div>
+    
+    <div id="strawberry_jamImg">
+        <img id="strawberry_jamImgae" onclick="stackMaterial('https://kfcapi.inicis.com/kfcs_api_img/KFCS/goods/DL_1545242_20211025132522462.png')" src="https://kfcapi.inicis.com/kfcs_api_img/KFCS/goods/DL_1545242_20211025132522462.png">
+    </div>
+
+    <div id="chickenImg">
+        <img id="chickenImage" onclick="stackMaterial('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCGp5Vq5ttMyiwPzXfyFT3chHgynLNxkeJcQ&usqp=CAU')" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCGp5Vq5ttMyiwPzXfyFT3chHgynLNxkeJcQ&usqp=CAU">
+    </div>
+
+
+    <script>
+
+        let menu1 = ["hem", "cheese", "lettuce", "tomato", "ketchup"];
+        let menu2 = ["hem", "cheese", "strawberry_jam", "bacon", "salad"];
+        let menu3 = ["sausage", "pickle", 'Mayonnaise', "lettuce", "tomato"];
+        let menu4 = ["bacon","cheese","redonion","tomato","mayonnaise"];
+        let menu5 = ["hem" , "lettuce" , "potatosalad", "pickle" , "ketchup"] ;
+        let menu6 = ["hem" , "cheese" , "lettuce" , "tomato", "Mayonnaise", "bacon", "redonion", "pickle", "potatosalad"] ;
+        let menu7 = ["chicken" , "tomato" , "lettuce" , "Mayonnaise"] ;
+
+        
+        let stackcnt = 1;
+           function stackMaterial(Imgsrc){
+           document.getElementById(stackcnt).src = Imgsrc;
+           cnt++;
+        }
+
+        /*
+            1. 햄 치즈 양배추 토마토 케챱 
+            2. 햄 치즈 딸기잼 베이컨 샐러드
+            3. 소시지 피클 마요네즈 양배추 토마토
+            4. 베이컨 치즈 적양파 토마토 마요네즈
+            5. 햄 양배추 샐러드 피클 케챱
+            6. 햄 치즈 양배추 토마토 마요네즈 베이컨 적양파 피클 샐러드
+            7. 치킨 토마토 양상추 마요네즈
+        */
+
+        /* 7가지 메뉴 랜덤 발생을 위한 1~7 난수 발생 */
+        const menu_rand = Math.floor(( Math.random() * (8 - 1) + 1));
+
+        switch(menu_rand){
+            case 1:  menu1(); break;
+            case 2:  menu2(); break; 
+            case 4:  menu3(); break; 
+            case 5:  menu4(); break; 
+            case 6:  menu5(); break; 
+            case 7:  menu6(); break; 
+        }
+
+
+    </script>
+
+</body>
+</html>
