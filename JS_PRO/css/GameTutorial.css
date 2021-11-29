@@ -27,10 +27,11 @@ h2 {
     margin-bottom: 2pc;
     text-align: center;
     width: 50%;
-    height: 100%;
+    height: 650px;
     background-color: rgb(255, 255, 255);
     vertical-align: middle;
     font-family: 'HSSaemaul-Regular';
+    font-size: x-large;
 }
 
 #menu_title_card {

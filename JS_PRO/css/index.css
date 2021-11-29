@@ -31,6 +31,22 @@ div{
     font-style: normal;
 }
 
+#main{
+    position: relative;
+    border: 0;
+}
+#cat1{
+    margin-left: 300px;
+    position: absolute;
+}
+#cat2{
+    margin-left: 600px;
+    position: absolute;
+}
+#cat3{
+    position: absolute;
+}
+
 /* 시작 화면_가게 이미지 */
 #main_store{
     display: inline;
