@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/MainGame.css?after">
-    </style>
 </head>
 
 <body>
@@ -23,6 +22,18 @@
     
         <div class="order_Sandwich">
             <img id="orderSandwich" src="./img/Transparent.png">>
+        </div>
+
+        <div class="hint">
+            <img id="Recipe_hint" src="./img/hint.png" onclick="viewHint()">
+        </div>
+
+        <div class="hint_view">
+            <img id="hintview" src="./img/Transparent.png">
+        </div>
+
+        <div class="order_Chk">
+            <img id="orderChk" src="./img/Transparent.png">
         </div>
     
         <div class="Cutting_board">
@@ -55,8 +66,6 @@
     
             <div id="step10"> <img id=10 src="./img/Transparent.png"> </div>
         </div>
-    
-    
     
         <div id="ketchupImg">
             <img id="ketchup" onclick="stackMaterial('./img/stackKetchup.png', this.id)" src="./img/ketchup.png">
@@ -106,7 +115,6 @@
             <img id="tomato" onclick="stackMaterial('./img/stackTomato.png',this.id)" src="./img/tomato.png">
         </div>
     
-    
         <div id="chickenImg">
             <img id="chicken" onclick="stackMaterial('./img/stackChicken.png',this.id)" src="./img/chichken.png">
         </div>
@@ -115,12 +123,26 @@
             <img id="topbread" onclick="stackMaterial('./img/SandBread.png',this.id)" src="./img/SandBread.png">
         </div>
 
-
         <div class="user_money">얻은 수익 : <div id="money">0</div>원</div>
 
         <div class="Game_countdown">
             <img id="countdown" src="./img/Transparent.png">
         </div>
+
+
+        <div id="GameEnd">
+
+            <div id="background">
+                <div id="text1">게임 종료</div>
+                <div id="text2">0원</div>
+                <img id="cat" src="./img/magic_cat.png">
+                <div id="backMain">
+                    <img id="back" src="./img/BackMain.png" onclick="location.href='index.html'">
+                </div>
+            </div>
+
+        </div>
+
     </div>
     <!--
         1. 햄 치즈 양배추 토마토 케챱 
@@ -132,12 +154,12 @@
         7. 치킨 토마토 양상추 마요네즈
     -->
     <script>
-
         let stackcnt = 1; // 단계 증가 변수 (1부터 시작하는 이유는 img 아이디가 1부터 있기때문)
         let mySand_stackcnt = 0; // 내가 쌓은 샌드위치 단계 증가 변수
         // var max_stack = 0; // 샌드위치의 최대 단계 변수
         let menu_rand; // 메뉴 랜덤 생성 변수
-        let user_money = 0;
+        let hint_cnt = 0; // 힌트 제한 체크 변수
+        var user_money = 0;
         let customer_tmp = 0; // 고양이 손님 연달아 방문 중복 체크
         let timeId, timeId2; // interval, timeout 변수 이름들
 
@@ -146,12 +168,13 @@
 
         // 메뉴 배열
         let menu1 = ["hem", "cheese", "lettuce", "tomato", "ketchup", "topbread"];
-        let menu2 = ["hem", "cheese", "strawberry_jam", "bacon", "salad", "topbread"];
+        let menu2 = ["hem", "cheese", "strawberry_jam", "bacon", "potatosalad", "topbread"];
         let menu3 = ["sausage", "pickle", 'mayonnaise', "lettuce", "tomato", "topbread"];
         let menu4 = ["bacon","cheese","redonion","tomato","mayonnaise", "topbread"];
         let menu5 = ["hem" , "lettuce" , "potatosalad", "pickle" , "ketchup" ,"topbread"] ;
         let menu6 = ["hem" , "cheese" , "lettuce" , "tomato", "mayonnaise", "bacon", "redonion", "pickle", "potatosalad" , "topbread"] ;
         let menu7 = ["chicken" , "tomato" , "lettuce" , "mayonnaise" , "topbread"] ;
+
 
 
         // 샌드위치 쌓기 단계 함수
@@ -172,18 +195,43 @@
                 clearInterval(timeId); // interval 종료
                 clearTimeout(timeId2); // settimeout 종료
                 MainGame(); // 지연 없애기 위해 한번 실행
-                timeId = setInterval(() => MainGame(), 11000); // interval 다시 실행
+                timeId = setInterval(() => MainGame(), 10000); // interval 다시 실행
             }
         }
 
+        function viewHint() {
+            switch(menu_rand){
+                case 1: document.getElementById("hintview").src = "./img/menu1_hint.png";  break;
+                case 2: document.getElementById("hintview").src = "./img/menu2_hint.png";  break;
+                case 3: document.getElementById("hintview").src = "./img/menu3_hint.png";  break;
+                case 4: document.getElementById("hintview").src = "./img/menu4_hint.png";  break;
+                case 5: document.getElementById("hintview").src = "./img/menu5_hint.png";  break;
+                case 6: document.getElementById("hintview").src = "./img/menu6_hint.png";  break;
+                case 7: document.getElementById("hintview").src = "./img/menu7_hint.png";  break;
+            }
+            setTimeout(() => document.getElementById("hintview").src = "./img/Transparent.png", 1000);
+            hint_cnt++;
+
+            if(hint_cnt == 3){ // 힌트 3번을 전부 쓰면 더 이상 볼 수 없음
+                document.getElementById("Recipe_hint").remove(); 
+                setTimeout(() => document.getElementById("hintview").remove(), 1000);
+            }
+        }
+
+        
         function GameStart() {
         
             document.getElementById("order_text").src = "./img/Transparent.png";
+            document.getElementById("Recipe_hint").src = "./img/Transparent.png";
             document.getElementById("order_text_cat").src = "./img/Transparent.png";
+            document.getElementById("orderBoxImage").src = "./img/Transparent.png";
+
             setTimeout(() => document.getElementById("countdown").src = "./img/countdown_3.png", 2000);
             setTimeout(() => document.getElementById("countdown").src = "./img/countdown_2.png", 3000);
             setTimeout(() => document.getElementById("countdown").src = "./img/countdown_1.png", 4000);
+
             setTimeout(() => setPlayTime(), 5000);
+            
             return 0;
         }
         GameStart();
@@ -207,7 +255,7 @@
         function MainGame(){
 
             timeId2 = setTimeout(() => SandwichCheck(menu_rand), 10000); 
-
+        
             /* 7가지 메뉴 랜덤 발생을 위한 1~7 난수 발생 */
             menu_rand = Math.floor(( Math.random() * (8 - 1) + 1));
 
@@ -225,6 +273,8 @@
 
         // 샌드위치 지우기 함수
         function SandwichCheck(menu_rand) {
+            
+            setTimeout(() => document.getElementById("orderChk").src = "./img/Transparent.png", 300); 
 
             let order_menu, sand_price;
         
@@ -268,13 +318,13 @@
     
             // 주문 받은 메뉴의 재료 배열과 선택한 재료 배열 요소가 맞다면 true / 틀리면 false
             if(JSON.stringify(order_menu) === JSON.stringify(user_sandwich)) {
+                document.getElementById("orderChk").src = "./img/order_clear.png"
                 user_money += sand_price;
-                alert("정답");
             }
             else{
+                document.getElementById("orderChk").src = "./img/order_fail.png"
                 user_money -= sand_price;
                 if(user_money < 0) user_money = 0;
-                alert("실패"); 
             } 
 
             document.getElementById("money").innerText = user_money;
@@ -293,8 +343,10 @@
 
         function setPlayTime(){
 
+            document.getElementById("Recipe_hint").src = "./img/hint.png";
             document.getElementById("order_text").src = "./img/order_text.png";
             document.getElementById("order_text_cat").src = "./img/order_text_cat.png";
+            document.getElementById("orderBoxImage").src = "./img/orderBox.png";
 
             let countdown_div = document.getElementById("countdown");
             countdown_div.remove(); // div 삭제하기, 안하면 해당 부분 클릭 안먹음
@@ -304,13 +356,16 @@
 
             setTimeout(function() {          
                 setGameout(); // 제한 시간 2분이 끝나면 setGameout() 함수 호출
-            }, 60000);
+            }, 120000);
         }
 
         function setGameout(){
             location.href="GameEnd.html";
+            localStorage.setItem('userMoney', user_money);
         }
 
     </script>
+
+
 </body>
 </html>

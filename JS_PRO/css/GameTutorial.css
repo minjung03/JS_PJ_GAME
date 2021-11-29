@@ -1,0 +1,72 @@
+
+@font-face {
+    font-family: 'HSSaemaul-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSSaemaul-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    background-color: salmon;
+}
+
+h2 {
+    text-align: center;
+    font-size: medium;
+    font-family: 'HSSaemaul-Regular';
+    font-size: 5pc;
+    margin-top: 5pc;
+}
+
+.card {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2pc;
+    margin-bottom: 2pc;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    vertical-align: middle;
+    font-family: 'HSSaemaul-Regular';
+}
+
+#menu_title_card {
+    margin-top: 50%;
+    height: 100%;
+    vertical-align: middle;
+    font-family: 'HSSaemaul-Regular';
+    font-size: 10pc;
+    color: snow;
+    text-shadow: lightskyblue 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50%;
+}
+
+button {
+    font-family: 'HSSaemaul-Regular';
+    font-size: 30px;
+    background-color: white;
+    border-radius: 15px;
+    border: white;
+    text-align: center;
+}
+
+.ingdiv {
+    width: 50vw;
+    height: 80vh;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+
+}
+
+img {
+    width: 70%;
+    height: 50%;
+    margin: auto 0;
+}

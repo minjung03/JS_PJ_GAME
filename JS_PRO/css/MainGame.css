@@ -44,7 +44,6 @@ body {
     width: 400px;
 }
 
-
 .orderBox {
     margin-top: 90px;
     margin-left: 750px;
@@ -73,6 +72,41 @@ body {
     position: absolute;
 }
 
+.hint {
+    margin-top: 290px;
+    margin-left: 1320px;
+    position: absolute;
+}
+.hint img {
+    height: 30px;
+    width: 40px;
+    border: 0;
+}
+
+.hint_view {
+    position: absolute;
+}
+.hint_view img {
+    margin-top: 345px;
+    margin-left: 930px;
+    height: 30px;
+}
+
+
+
+.order_Chk{
+    margin-left: 1020px;
+    position: absolute;
+    height: 150px;
+    width: 300px;
+    margin-top: 175px;
+    border: 0;
+}
+.order_Chk img{
+    height: 150px;
+    width: 230px;
+    border: 0;
+}
 
 .Cutting_board {
     position: absolute;
@@ -85,7 +119,6 @@ body {
     height: 300px;
     border: 0;
 }
-
 
 .order_Sandwich {
     margin-left: 950px;
@@ -444,4 +477,46 @@ body {
 
 .user_money #money {
     display: inline;
+}
+
+#background {
+    font-family: 'KOTRAHOPE';
+    margin-top: 210px;
+    margin-left: 470px;
+    position: absolute; 
+    width: 1000px;
+    height: 600px;
+    border-radius: 20px;
+    background-color: white;
+    visibility: collapse;
+}
+#text1 {
+    width: 1000px;
+    font-size: 130px;
+    position: absolute; 
+    margin-top: 110px;
+    text-align: center;
+    visibility: collapse;
+}
+#text2 {
+    width: 1000px;
+    text-align: center;
+    display: inline;
+    font-size: 110px;
+    position: absolute; 
+    margin-top: 290px;
+    visibility: collapse;
+}
+#backMain{
+    position: absolute; 
+    font-size: 70px;
+    margin-top: 20px;
+    margin-left: 900px;
+    visibility: collapse;
+}
+
+#cat {
+    position: absolute; 
+    width: 200px;
+    visibility: collapse;
 }

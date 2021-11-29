@@ -1,0 +1,58 @@
+
+body {
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: 'KOTRAHOPE';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#GameEnd {
+    background-image: url('../img/GameBackground.png');
+    background-size: 1920px 1200px;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    border: 0;
+}
+
+#background {
+    font-family: 'KOTRAHOPE';
+    margin-top: 210px;
+    margin-left: 470px;
+    position: absolute; 
+    width: 1000px;
+    height: 600px;
+    border-radius: 20px;
+    background-color: white;
+}
+#text1 {
+    width: 1000px;
+    font-size: 130px;
+    position: absolute; 
+    margin-top: 120px;
+    text-align: center;
+}
+#text2 {
+    width: 1000px;
+    text-align: center;
+    display: inline;
+    font-size: 110px;
+    position: absolute; 
+    margin-top: 300px;
+}
+#backMain{
+    position: absolute; 
+    font-size: 70px;
+    margin-top: 20px;
+    margin-left: 900px;
+}
+#cat {
+    margin-top: 500px;
+    margin-left: 30px;
+    position: absolute; 
+    width: 200px;
+}
