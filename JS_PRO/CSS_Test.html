@@ -1,119 +1,126 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <!-- 여기서 디자인 설정 -->
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/MainGame.css">
-    <style>
-        div{
-            width: 500px;
-            height: 150px;
-            border: 1px gray solid;
-        }
-        img {
-            width: 300px;
-            height: 150px;
-        }
-        #order_Sandwich {
-            float: right;
-        }
+    <link rel="stylesheet" href="css/MainGame.css?after">
     </style>
 </head>
 
 <body>
     <div class="GameBackground">
 
-    <div class="customer">
-        <img id="customerImage" onclick="setCustomer()" src="./img/customer_cat_1.png">
-    </div>
+        <div class="Game_countdown">
+            <img id="countdown">
+        </div>
 
-    <div class="orderBox">
-        <img id="orderBoxImage" src="./img/orderBox.png">
-    </div>
-   
-    <div class="step">
-        <div id="step1"> <img id=1> </div>
-
-        <div id="step2"> <img id=2> </div>
-
-        <div id="step3"> <img id=3> </div>
-
-        <div id="step4"> <img id=4> </div>
-
-        <div id="step5"> <img id=5> </div>
-
-        <div id="step6"> <img id=6> </div>
-
-        <div id="step7"> <img id=7> </div>
-
-        <div id="step8"> <img id=8> </div>
-
-        <div id="step9"> <img id=9> </div>
-
-        <div id="step10"> <img id=10> </div>
-    </div>
-
-    <div class="order_Sandwich">
-        <img id="order_sand" onclick="setOrder()">
-    </div>
-<!--
-
-    <div id="ketchupImg">
-        <img id="ketchup" onclick="stackMaterial('./img/stackKetchup.png', this.id)" src="./img/ketchup.png">
-    </div>
-
-    <div id="MayonnaiseImg">
-        <img id="mayonnaise" onclick="stackMaterial('./img/stackMayonnaise.png',this.id)" src="./img/mayonnaise.png">
-    </div>
-
-    <div id="baconImg">
-        <img id="bacon" onclick="stackMaterial('./img/stackBacon.png',this.id)" src="./img/bacon.png">
-    </div>
-
-    <div id="redonionImg">
-        <img id="redonion" onclick="stackMaterial('./img/stackRedonion.png',this.id)" src="./img/redonion.png">
-    </div>
-
-    <div id="pickleImg">
-        <img id="pickle" onclick="stackMaterial('./img/stackPickle.png',this.id)" src="./img/pickle.png">
-    </div>
-
-    <div id="potatosaladImg">
-        <img id="potatosalad" onclick="stackMaterial('./img/stackPotatosalad.png', this.id)" src="./img/potatosalad.png">
-    </div>
-
-    <div id="sausageImg">
-        <img id="sausage" onclick="stackMaterial('./img/stackSausage.png',this.id)" src="./img/sausage.png">
-    </div>
-
-    <div id="hemImg">
-        <img id="hem" onclick="stackMaterial('./img/stackHem.png',this.id)" src="./img/hem.png">
-    </div>
-
-    <div id="cheeseImg">
-        <img id="cheese" onclick="stackMaterial('./img/stackCheese.png',this.id)" src="./img/Cheese.png">
-    </div>
-
-    <div id="lettuceImg">
-        <img id="lettuce" onclick="stackMaterial('./img/stackLettuce.png',this.id)" src="./img/lettuce.png">
-    </div>
-
-    <div id="tomatoImg">
-        <img id="tomato" onclick="stackMaterial('./img/stackTomato.png',this.id)" src="./img/tomato.png">
-    </div>
+        <div class="customer">
+            <img id="customerImage" onclick="setCustomer()">
+        </div>
     
-    <div id="strawberry_jamImg">
-        <img id="strawberry_jam" onclick="stackMaterial('./img/stackStrawberyy_jam.png',this.id)" src="./img/strawberry_jam.png">
-    </div>
+        <div class="orderBox">
+            <img id="orderBoxImage" src="./img/orderBox.png">
+        </div>
+    
+        <img id="order_text" src="./img/order_text.png">
+        <img id="order_text_cat" src="./img/order_text_cat.png">
+    
+        <div class="order_Sandwich">
+            <img id="orderSandwich">
+        </div>
+    
+        <div class="Cutting_board">
+            <img id="cuttingboard" src="./img/Cuttingboard.png">
+        </div>
+    
+        <div class="under_Bread">
+            <img id="underbread" src="./img/SandBread.png">
+        </div>
+    
+    
+        <div class="Snadwich">
+            <div id="step1"> <img id=1 src="./img/Transparent.png"> </div>
+    
+            <div id="step2"> <img id=2 src="./img/Transparent.png"> </div>
+    
+            <div id="step3"> <img id=3 src="./img/Transparent.png"> </div>
+    
+            <div id="step4"> <img id=4 src="./img/Transparent.png"> </div>
+    
+            <div id="step5"> <img id=5 src="./img/Transparent.png"> </div>
+    
+            <div id="step6"> <img id=6 src="./img/Transparent.png"> </div>
+    
+            <div id="step7"> <img id=7 src="./img/Transparent.png"> </div>
+    
+            <div id="step8"> <img id=8 src="./img/Transparent.png"> </div>
+    
+            <div id="step9"> <img id=9 src="./img/Transparent.png"> </div>
+    
+            <div id="step10"> <img id=10 src="./img/Transparent.png"> </div>
+        </div>
+    
+    
+    
+        <div id="ketchupImg">
+            <img id="ketchup" onclick="stackMaterial('./img/stackKetchup.png', this.id)" src="./img/ketchup.png">
+        </div>
+    
+        <div id="MayonnaiseImg">
+            <img id="mayonnaise" onclick="stackMaterial('./img/stackMayonnaise.png',this.id)" src="./img/mayonnaise.png">
+        </div>
+    
+        <div id="strawberry_jamImg">
+            <img id="strawberry_jam" onclick="stackMaterial('./img/stackStrawberyy_jam.png',this.id)" src="./img/strawberry_jam.png">
+        </div>
+    
+        <div id="baconImg">
+            <img id="bacon" onclick="stackMaterial('./img/stackBacon.png',this.id)" src="./img/bacon.png">
+        </div>
+    
+        <div id="redonionImg">
+            <img id="redonion" onclick="stackMaterial('./img/stackRedonion.png',this.id)" src="./img/redonion.png">
+        </div>
+    
+        <div id="pickleImg">
+            <img id="pickle" onclick="stackMaterial('./img/stackPickle.png',this.id)" src="./img/pickle.png">
+        </div>
+          
+        <div id="potatosaladImg">
+            <img id="potatosalad" onclick="stackMaterial('./img/stackPotatosalad.png', this.id)" src="./img/potatosalad.png">
+        </div>
+    
+        <div id="sausageImg">
+            <img id="sausage" onclick="stackMaterial('./img/stackSausage.png',this.id)" src="./img/sausage.png">
+        </div>
+    
+        <div id="hemImg">
+            <img id="hem" onclick="stackMaterial('./img/stackHem.png',this.id)" src="./img/hem.png">
+        </div>
+       
+        <div id="cheeseImg">
+            <img id="cheese" onclick="stackMaterial('./img/stackCheese.png',this.id)" src="./img/Cheese.png">
+        </div>
+    
+        <div id="lettuceImg">
+            <img id="lettuce" onclick="stackMaterial('./img/stackLettuce.png',this.id)" src="./img/lettuce.png">
+        </div>
+    
+        <div id="tomatoImg">
+            <img id="tomato" onclick="stackMaterial('./img/stackTomato.png',this.id)" src="./img/tomato.png">
+        </div>
+    
+    
+        <div id="chickenImg">
+            <img id="chicken" onclick="stackMaterial('./img/stackChicken.png',this.id)" src="./img/chichken.png">
+        </div>
+    
+        <div id="topBreadImg">
+            <img id="topbread" onclick="stackMaterial('./img/SandBread.png',this.id)" src="./img/SandBread.png">
+        </div>
 
-    <div id="chickenImg">
-        <img id="chicken" onclick="stackMaterial('./img/stackChicken.png',this.id)" src="./img/chichken.png">
-    </div>
 
-    <div id="topBreadImg">
-        <img id="topbread" onclick="stackMaterial('./img/bread.png',this.id)" src="./img/bread.png">
+        <div class="user_money">얻은 수익 : <div id="money">0</div>원</div>
+    
     </div>
--->
-</div>
 </body>
 </html>

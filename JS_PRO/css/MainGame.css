@@ -3,6 +3,13 @@ body {
     margin: 0;
 }
 
+@font-face {
+    font-family: 'KOTRAHOPE';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .GameBackground {
     background-image: url('../img/GameBackground.png');
     background-size: 1920px 1200px;
@@ -13,17 +20,17 @@ body {
     opacity: 0.9;
 }
 
-div[id*="step"]{
-    height: 30px;
-    width: 400px;
-    margin-left: 750px;
-    position: absolute;
-    margin-top: 500px;
 
+.cutting_bord {
+    margin-top: 90px;
+    margin-left: 450px;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border: 0;
 }
-div[id*="step"] img {
-    display: block;
-    height: 30px;
+.cutting_bord img{
+    height: 400px;
     width: 400px;
 }
 
@@ -40,30 +47,413 @@ div[id*="step"] img {
     width: 400px;
 }
 
+
 .orderBox {
     margin-top: 90px;
     margin-left: 750px;
     position: absolute;
-    height: 300px;
-    width: 300px;
+    height: 330px;
+    width: 800px;
     border: 0;
 }
-
 .orderBox img {
     height: 330px;
     width: 800px;
+    border: 0;
 }
 
+
+#order_text {
+    margin-top: 155px;
+    margin-left: 1050px;
+    position: absolute;
+}
+#order_text_cat {
+    margin-top: 153px;
+    margin-left: 1213px;
+    width: 55px;
+    height: 55px;
+    position: absolute;
+}
+
+
+.Cutting_board {
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 300px;   
+    width: 1100px;
+    height: 800px;
+    border: 0;
+}
+.Cutting_board img{
+    width: 1100px;
+    height: 800px;
+    border: 0;
+}
+
+
 .order_Sandwich {
-    margin-top: 10px;
-    margin-left: 980px;
+    margin-left: 950px;
     position: absolute;
     height: 150px;
     width: 300px;
+    margin-top: 95px;
     border: 0;
 }
 .order_Sandwich img {
-    height: 150px;
-    width: 300px;
-    border: none;
+    height: 300px;
+    width: 400px;
+    border: 0;
 }
+
+
+#ketchupImg {
+    position: absolute;
+    margin-top: 570px;
+    margin-left: 70px;
+    height: 250px;
+    width: 300px;
+    border: 0;
+}
+#ketchupImg img {
+    height: 250px;
+    width: 150px;
+}
+
+#MayonnaiseImg{
+    position: absolute;
+    margin-top: 570px;
+    margin-left: 170px;
+    height: 250px;
+    width: 300px;
+    border: 0;
+}
+#MayonnaiseImg img {
+    height: 250px;
+    width: 170px;
+}
+
+#strawberry_jamImg {
+    position: absolute;
+    margin-top: 580px;
+    margin-left: 280px;
+    height: 250px;
+    width: 250px;
+    border: 0;
+}
+#strawberry_jamImg img {
+    height: 250px;
+    width: 250px;
+}
+
+.under_Bread {
+    margin-bottom: 0;
+    position: absolute;
+    margin-left: 750px;
+    /*650px*/
+    margin-top: 600px;
+    border: 0;
+}
+.under_Bread img {
+    width: 270px;
+    height: 250px;
+}
+
+#topBreadImg {
+    margin-bottom: 0;
+    position: absolute;
+    margin-left: 590px;
+    /*810*/
+    margin-top: 600px;
+    border: 0;
+}
+#topBreadImg img {
+    width: 270px;
+    height: 250px;
+}
+
+
+
+
+#step1 {   
+    margin-left: 535px;
+    margin-top: 435px;
+    position: absolute;
+    border: 0;
+}
+#step1 img {
+    width: 700px;
+    height: 600px;
+}
+
+
+#step2{   
+    margin-top: 450px;
+    margin-left: 545px;
+    position: absolute;
+    border: 0;
+}
+#step2 img {
+    width: 700px;
+    height: 600px;
+    border: 0;
+}
+
+
+#step3{   
+    margin-top: 450px;
+    margin-left: 535px;
+    position: absolute;
+    border: 0;
+}
+#step3 img {
+    width: 700px;
+    height: 600px;
+    border: 0;
+}
+
+
+#step4{   
+    margin-top: 460px;
+    margin-left: 535px;
+    position: absolute;
+    border: 0;
+}
+#step4 img {
+    width: 700px;
+    height: 600px;
+    border: 0;
+}
+
+
+#step5{   
+    margin-top: 450px;
+    margin-left: 535px;
+    position: absolute;
+    border: 0;
+}
+#step5 img {
+    width: 700px;
+    height: 600px;
+    border: 0;
+}
+
+#step6{   
+    margin-top: 440px;
+    margin-left: 535px;
+    position: absolute;
+    border: 0;
+}
+#step6 img {
+    width: 700px;
+    height: 600px;
+    border: 0;
+}
+
+#step7{   
+    margin-top: 440px;
+    margin-left: 535px;
+    position: absolute;
+    border: 0;
+}
+#step7 img {
+    width: 700px;
+    height: 600px;
+    border: 0;
+}
+
+
+#step8{   
+    margin-top: 440px;
+    margin-left: 535px;
+    position: absolute;
+    border: 0;
+}
+#step8 img {
+    width: 700px;
+    height: 600px;
+    border: 0;
+}
+
+
+#step9{   
+    margin-top: 440px;
+    margin-left: 535px;
+    position: absolute;
+    border: 0;
+}
+#step9 img {
+    width: 700px;
+    height: 600px;
+    border: 0;
+}
+
+#step10{   
+    margin-top: 440px;
+    margin-left: 535px;
+    position: absolute;
+    border: 0;
+}
+#step10 img {
+    width: 700px;
+    height: 600px;
+    border: 0;
+}
+
+
+#baconImg {
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 1620px;
+    width: 280px;
+    height: 250px;
+    border: 0;
+}
+#baconImg img {
+    width: 280px;
+    height: 250px;
+}
+
+#redonionImg {
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 1350px;
+    width: 280px;
+    height: 250px;
+    border: 0;
+}
+#redonionImg img {
+    width: 280px;
+    height: 250px;
+}
+
+#pickleImg {
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 1080px;
+    width: 280px;
+    border: 0;
+    height: 250px;
+}
+#pickleImg img {
+    width: 280px;
+    height: 250px;
+}
+
+#potatosaladImg {
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 810px;
+    width: 280px;
+    height: 250px;
+    border: 0;
+}
+#potatosaladImg img {
+    width: 280px;
+    height: 250px;
+}
+
+#sausageImg {
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 540px;
+    width: 280px;
+    height: 250px;
+    border: 0;
+}
+#sausageImg img {
+    width: 280px;
+    height: 250px;
+}
+
+#hemImg {
+    position: absolute;
+    margin-top: 360px;
+    margin-left: 270px;
+    width: 280px;
+    height: 250px;
+    border: 0;
+}
+#hemImg img {
+    width: 280px;
+    height: 250px;
+}
+
+
+#cheeseImg {
+    position: absolute;
+    margin-top: 350px;
+    width: 280px;
+    height: 250px;
+    border: 0;
+}
+#cheeseImg img {
+    width: 280px;
+    height: 250px;
+}
+
+
+#lettuceImg {
+    position: absolute;
+    margin-top: 570px;
+    margin-left: 1620px;
+    width: 280px;
+    height: 250px;
+    border: 0;
+}
+#lettuceImg img {
+    width: 280px;
+    height: 250px;
+}
+
+#tomatoImg {
+    position: absolute;
+    margin-top: 570px;
+    margin-left: 1350px;
+    width: 280px;
+    height: 250px;
+    border: 0;
+}
+#tomatoImg img {
+    width: 280px;
+    height: 250px;
+}
+
+#chickenImg {
+    position: absolute;
+    margin-top: 570px;
+    margin-left: 1080px;
+    width: 280px;
+    height: 250px;
+    border: 0;
+}
+#chickenImg img {
+    width: 280px;
+    height: 250px;
+}
+
+
+.user_money{
+    float: right;
+    margin-top: 65px;
+    margin-right: 163px;
+    font-family: 'KOTRAHOPE';
+    font-size: xx-large;
+}
+
+.user_money #money {
+    display: inline;
+}
+
+
+.Game_countdown {
+    position: absolute;
+    margin-top: 290px;
+    margin-left: 750px;
+    border: 1px red solid;
+}
+.Game_countdown img {
+    width: 400px;
+    height: 400px;
+}
+
