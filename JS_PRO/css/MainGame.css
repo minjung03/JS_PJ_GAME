@@ -10,29 +10,26 @@ body {
     font-style: normal;
 }
 
-.GameBackground {
+#GameBackground {
     background-image: url('../img/GameBackground.png');
     background-size: 1920px 1200px;
     width: 100vw;
     height: 100vh;
     position: relative;
     border: 0;
-    opacity: 0.9;
 }
 
-
-.cutting_bord {
-    margin-top: 90px;
-    margin-left: 450px;
+.Game_countdown {
     position: absolute;
-    height: 300px;
-    width: 300px;
-    border: 0;
+    margin-top: 290px;
+    margin-left: 750px;
 }
-.cutting_bord img{
-    height: 400px;
+.Game_countdown img {
     width: 400px;
+    height: 400px;
 }
+
+
 
 .customer {
     margin-top: 90px;
@@ -79,15 +76,13 @@ body {
 
 .Cutting_board {
     position: absolute;
-    margin-left: 250px;
-    margin-top: 300px;   
-    width: 1100px;
-    height: 800px;
     border: 0;
 }
 .Cutting_board img{
-    width: 1100px;
-    height: 800px;
+    width: 800px;
+    margin-left: 400px;
+    margin-top: 580px;   
+    height: 300px;
     border: 0;
 }
 
@@ -97,12 +92,12 @@ body {
     position: absolute;
     height: 150px;
     width: 300px;
-    margin-top: 95px;
+    margin-top: 110px;
     border: 0;
 }
 .order_Sandwich img {
-    height: 300px;
-    width: 400px;
+    height: 280px;
+    width: 380px;
     border: 0;
 }
 
@@ -174,26 +169,26 @@ body {
 
 
 
-
 #step1 {   
-    margin-left: 535px;
-    margin-top: 435px;
+
     position: absolute;
     border: 0;
 }
 #step1 img {
+    margin-left: 535px;
+    margin-top: 437px;
     width: 700px;
     height: 600px;
 }
 
 
 #step2{   
-    margin-top: 450px;
-    margin-left: 545px;
     position: absolute;
     border: 0;
 }
 #step2 img {
+    margin-top: 437px;
+    margin-left: 535px;
     width: 700px;
     height: 600px;
     border: 0;
@@ -201,12 +196,13 @@ body {
 
 
 #step3{   
-    margin-top: 450px;
-    margin-left: 535px;
+
     position: absolute;
     border: 0;
 }
 #step3 img {
+    margin-top: 437px;
+    margin-left: 535px;
     width: 700px;
     height: 600px;
     border: 0;
@@ -214,12 +210,13 @@ body {
 
 
 #step4{   
-    margin-top: 460px;
-    margin-left: 535px;
+
     position: absolute;
     border: 0;
 }
 #step4 img {
+    margin-top: 437px;
+    margin-left: 535px;
     width: 700px;
     height: 600px;
     border: 0;
@@ -227,36 +224,39 @@ body {
 
 
 #step5{   
-    margin-top: 450px;
-    margin-left: 535px;
+
     position: absolute;
     border: 0;
 }
 #step5 img {
+    margin-top: 437px;
+    margin-left: 535px;
     width: 700px;
     height: 600px;
     border: 0;
 }
 
 #step6{   
-    margin-top: 440px;
-    margin-left: 535px;
+   
     position: absolute;
     border: 0;
 }
 #step6 img {
     width: 700px;
+    margin-top: 437px;
+    margin-left: 535px;
     height: 600px;
     border: 0;
 }
 
 #step7{   
-    margin-top: 440px;
-    margin-left: 535px;
+
     position: absolute;
     border: 0;
 }
 #step7 img {
+    margin-top: 437px;
+    margin-left: 535px;
     width: 700px;
     height: 600px;
     border: 0;
@@ -264,12 +264,13 @@ body {
 
 
 #step8{   
-    margin-top: 440px;
-    margin-left: 535px;
+
     position: absolute;
     border: 0;
 }
 #step8 img {
+    margin-top: 437px;
+    margin-left: 535px;
     width: 700px;
     height: 600px;
     border: 0;
@@ -277,24 +278,24 @@ body {
 
 
 #step9{   
-    margin-top: 440px;
-    margin-left: 535px;
     position: absolute;
     border: 0;
 }
 #step9 img {
+    margin-top: 437px;
+    margin-left: 535px;
     width: 700px;
     height: 600px;
     border: 0;
 }
 
 #step10{   
-    margin-top: 440px;
-    margin-left: 535px;
     position: absolute;
     border: 0;
 }
 #step10 img {
+    margin-top: 437px;
+    margin-left: 535px;
     width: 700px;
     height: 600px;
     border: 0;
@@ -444,16 +445,3 @@ body {
 .user_money #money {
     display: inline;
 }
-
-
-.Game_countdown {
-    position: absolute;
-    margin-top: 290px;
-    margin-left: 750px;
-    border: 1px red solid;
-}
-.Game_countdown img {
-    width: 400px;
-    height: 400px;
-}
-

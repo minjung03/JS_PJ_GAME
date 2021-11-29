@@ -7,10 +7,11 @@
 </head>
 
 <body>
-    <div class="GameBackground">
+
+    <div id="GameBackground">
 
         <div class="customer">
-            <img id="customerImage" onclick="setCustomer()">
+            <img id="customerImage" onclick="setCustomer()" src="./img/Transparent.png">
         </div>
     
         <div class="orderBox">
@@ -21,7 +22,7 @@
         <img id="order_text_cat" src="./img/order_text_cat.png">
     
         <div class="order_Sandwich">
-            <img id="orderSandwich">
+            <img id="orderSandwich" src="./img/Transparent.png">>
         </div>
     
         <div class="Cutting_board">
@@ -116,7 +117,10 @@
 
 
         <div class="user_money">얻은 수익 : <div id="money">0</div>원</div>
-    
+
+        <div class="Game_countdown">
+            <img id="countdown" src="./img/Transparent.png">
+        </div>
     </div>
     <!--
         1. 햄 치즈 양배추 토마토 케챱 
@@ -172,16 +176,17 @@
             }
         }
 
-        /*
-          function GameStart() {
-            
-            setTimeout(() => document.getElementById("countdown").src = "./img/countdown_3.png", 3000);
-            setTimeout(() => document.getElementById("countdown").src = "./img/countdown_2.png", 4000);
-            setTimeout(() => document.getElementById("countdown").src = "./img/countdown_1.png", 5000);
-            setPlayTime();
-
+        function GameStart() {
+        
+            document.getElementById("order_text").src = "./img/Transparent.png";
+            document.getElementById("order_text_cat").src = "./img/Transparent.png";
+            setTimeout(() => document.getElementById("countdown").src = "./img/countdown_3.png", 2000);
+            setTimeout(() => document.getElementById("countdown").src = "./img/countdown_2.png", 3000);
+            setTimeout(() => document.getElementById("countdown").src = "./img/countdown_1.png", 4000);
+            setTimeout(() => setPlayTime(), 5000);
             return 0;
-        */
+        }
+        GameStart();
 
         function setCustomer() {
             // 두 번 연속 같은 고양이 손님이 나타나지 않게 중복 처리
@@ -205,7 +210,6 @@
 
             /* 7가지 메뉴 랜덤 발생을 위한 1~7 난수 발생 */
             menu_rand = Math.floor(( Math.random() * (8 - 1) + 1));
-            alert("시작 - 메뉴번호 : "+menu_rand);
 
             switch(menu_rand){
                 case 1 : document.getElementById("orderSandwich").src = "./img/menu1_Sandwich.png"; break;
@@ -222,7 +226,6 @@
         // 샌드위치 지우기 함수
         function SandwichCheck(menu_rand) {
 
-            alert("체크 - "+menu_rand);
             let order_menu, sand_price;
         
             switch(menu_rand){
@@ -290,6 +293,12 @@
 
         function setPlayTime(){
 
+            document.getElementById("order_text").src = "./img/order_text.png";
+            document.getElementById("order_text_cat").src = "./img/order_text_cat.png";
+
+            let countdown_div = document.getElementById("countdown");
+            countdown_div.remove(); // div 삭제하기, 안하면 해당 부분 클릭 안먹음
+
             MainGame(); // 바로 시작 하기 위해서 함수 직접 부르기
             timeId = setInterval(() => MainGame(), 11000);
 
@@ -297,7 +306,6 @@
                 setGameout(); // 제한 시간 2분이 끝나면 setGameout() 함수 호출
             }, 60000);
         }
-        setPlayTime();
 
         function setGameout(){
             location.href="GameEnd.html";
